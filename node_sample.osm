@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm>
+  <node changeset="10616637" id="480284657" lat="-15.8349845" lon="-47.8728820" timestamp="2012-02-07T21:28:43Z" uid="27099" user="MAPconcierge" version="4">
+    <tag k="highway" v="turning_circle" />
+  </node>
+  <node changeset="49951185" id="544852289" lat="-15.8239586" lon="-47.9162310" timestamp="2017-06-30T19:01:20Z" uid="360183" user="wille" version="2">
+    <tag k="highway" v="turning_circle" />
+  </node>
+  <node changeset="3977180" id="653977507" lat="-15.8397964" lon="-47.8661871" timestamp="2010-02-26T01:31:33Z" uid="237976" user="henriquefm" version="1">
+    <tag k="highway" v="turning_circle" />
+  </node>
+  <node changeset="6587614" id="1028268545" lat="-15.8448209" lon="-47.9003857" timestamp="2010-12-08T17:52:10Z" uid="237976" user="henriquefm" version="2">
+    <tag k="highway" v="turning_circle" />
+  </node>
+  <node changeset="25960667" id="1042138902" lat="-15.7927752" lon="-47.8938887" timestamp="2014-10-09T13:10:15Z" uid="2388203" user="pafreire" version="5">
+    <tag k="aeroway" v="helipad" />
+    <tag k="name" v="Brasil XXI Heliport" />
+    <tag k="source" v="ourairports.com" />
+  </node>
+  <node changeset="6959210" id="1102290614" lat="-15.8042166" lon="-47.8614066" timestamp="2011-01-13T17:38:08Z" uid="389299" user="Alexandremb" version="1">
+    <tag k="amenity" v="parking" />
+    <tag k="capacity:disabled" v="yes" />
+    <tag k="name" v="Garagem do TCU" />
+    <tag k="parking" v="underground" />
+  </node>
+  <node changeset="52870839" id="1163029883" lat="-15.8137993" lon="-47.8075668" timestamp="2017-10-12T20:12:42Z" uid="463507" user="naoliv" version="3">
+    <tag k="highway" v="turning_circle" />
+  </node>
+  <node changeset="45632295" id="1327080837" lat="-15.8696182" lon="-47.8222746" timestamp="2017-01-29T21:02:13Z" uid="360183" user="wille" version="3">
+    <tag k="crossing" v="traffic_signals" />
+    <tag k="highway" v="traffic_signals" />
+    <tag k="traffic_signals" v="signal" />
+  </node>
+  <node changeset="8963090" id="1391829829" lat="-15.7230514" lon="-47.8880615" timestamp="2011-08-09T02:03:48Z" uid="421662" user="EdmarMoretti" version="1">
+    <tag k="name" v="Banca de Revistas" />
+    <tag k="shop" v="books" />
+  </node>
+  <node changeset="20551964" id="1554871759" lat="-15.8571800" lon="-48.0241268" timestamp="2014-02-14T03:56:22Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20559090" id="1554874886" lat="-15.8653119" lon="-48.0103059" timestamp="2014-02-14T13:45:51Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20559090" id="1555451589" lat="-15.8517256" lon="-48.0133115" timestamp="2014-02-14T13:45:55Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="33989361" id="1555470977" lat="-15.8434441" lon="-48.0032093" timestamp="2015-09-12T21:53:04Z" uid="463504" user="erickdeoliveiraleal" version="3">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20551798" id="1555476466" lat="-15.8451253" lon="-48.0155001" timestamp="2014-02-14T03:22:45Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="45159900" id="1555493596" lat="-15.8360896" lon="-47.9944590" timestamp="2017-01-14T13:16:46Z" uid="360183" user="wille" version="3">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20552025" id="1555523236" lat="-15.8624195" lon="-47.9829341" timestamp="2014-02-14T04:06:04Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20552025" id="1555537133" lat="-15.8688799" lon="-47.9800373" timestamp="2014-02-14T04:06:04Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20551932" id="1555591421" lat="-15.8254625" lon="-48.0108331" timestamp="2014-02-14T03:50:55Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="10629939" id="1624635622" lat="-15.8433019" lon="-47.8870988" timestamp="2012-02-08T23:48:09Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624638590" lat="-15.8461646" lon="-47.8919107" timestamp="2012-02-08T23:49:37Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624638939" lat="-15.8465841" lon="-47.8977157" timestamp="2012-02-08T23:49:47Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624640299" lat="-15.8483129" lon="-47.8981478" timestamp="2012-02-08T23:50:28Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624640666" lat="-15.8487952" lon="-47.8959978" timestamp="2012-02-08T23:50:39Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624641083" lat="-15.8491547" lon="-47.9015253" timestamp="2012-02-08T23:50:49Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624641453" lat="-15.8494749" lon="-47.9015741" timestamp="2012-02-08T23:51:00Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624642368" lat="-15.8511966" lon="-47.9075686" timestamp="2012-02-08T23:51:43Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10629939" id="1624642616" lat="-15.8518742" lon="-47.9098799" timestamp="2012-02-08T23:51:56Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672337299" lat="-15.8449224" lon="-47.8970203" timestamp="2012-03-12T18:32:57Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672337698" lat="-15.8456897" lon="-47.8989892" timestamp="2012-03-12T18:33:12Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672338090" lat="-15.8463311" lon="-47.9024683" timestamp="2012-03-12T18:33:32Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672338360" lat="-15.8471046" lon="-47.9029309" timestamp="2012-03-12T18:33:46Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="41379370" id="1672338511" lat="-15.8478859" lon="-47.9066030" timestamp="2016-08-11T02:29:25Z" uid="360183" user="wille" version="2">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672338850" lat="-15.8486188" lon="-47.9090567" timestamp="2012-03-12T18:34:12Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672339100" lat="-15.8492083" lon="-47.9108106" timestamp="2012-03-12T18:34:25Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672339310" lat="-15.8501825" lon="-47.9039456" timestamp="2012-03-12T18:34:37Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10958549" id="1672339708" lat="-15.8513808" lon="-47.9045555" timestamp="2012-03-12T18:34:51Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="14021792" id="1672445552" lat="-15.8420153" lon="-47.8902292" timestamp="2012-11-25T00:04:08Z" uid="27099" user="MAPconcierge" version="2">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10959515" id="1672445965" lat="-15.8428664" lon="-47.8916570" timestamp="2012-03-12T19:47:46Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="10959515" id="1672446471" lat="-15.8435659" lon="-47.8931451" timestamp="2012-03-12T19:48:00Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="20551798" id="1705136284" lat="-15.7984183" lon="-48.0460228" timestamp="2014-02-14T03:22:49Z" uid="463504" user="erickdeoliveiraleal" version="3">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20558719" id="1708696703" lat="-15.8214261" lon="-48.0256368" timestamp="2014-02-14T13:23:28Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20550275" id="1724601836" lat="-15.8297484" lon="-47.9843457" timestamp="2014-02-13T23:05:45Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20550275" id="1724602101" lat="-15.8336844" lon="-47.9784412" timestamp="2014-02-13T23:05:45Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20550275" id="1724602848" lat="-15.8420540" lon="-47.9779506" timestamp="2014-02-13T23:05:48Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20550275" id="1724603077" lat="-15.8442197" lon="-47.9683688" timestamp="2014-02-13T23:05:49Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="53194736" id="1786883720" lat="-15.8783130" lon="-48.0200180" timestamp="2017-10-24T01:06:10Z" uid="4195058" user="Walysson" version="2">
+    <tag k="amenity" v="fast_food" />
+    <tag k="cuisine" v="sandwich" />
+    <tag k="name" v="Subway" />
+  </node>
+  <node changeset="14021916" id="2031077556" lat="-15.8390451" lon="-47.8864616" timestamp="2012-11-25T00:18:36Z" uid="27099" user="MAPconcierge" version="2">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="14021792" id="2031077697" lat="-15.8410023" lon="-47.8875389" timestamp="2012-11-25T00:03:57Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="14021792" id="2031077819" lat="-15.8422126" lon="-47.8890050" timestamp="2012-11-25T00:04:01Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="14021916" id="2031085570" lat="-15.8393114" lon="-47.8855240" timestamp="2012-11-25T00:18:32Z" uid="27099" user="MAPconcierge" version="1">
+    <tag k="source" v="Bing" />
+  </node>
+  <node changeset="17505801" id="2431425238" lat="-15.8162812" lon="-48.0158002" timestamp="2013-08-25T19:23:42Z" uid="1310899" user="Linhares" version="1">
+    <tag k="amenity" v="restaurant" />
+    <tag k="cuisine" v="chic1" />
+    <tag k="name" v="Piato Nona" />
+  </node>
+  <node changeset="20550005" id="2441895320" lat="-15.8054424" lon="-48.0055818" timestamp="2014-02-13T22:42:14Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20551798" id="2441895464" lat="-15.8235656" lon="-48.0495597" timestamp="2014-02-14T03:22:57Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="20743633" id="2479614166" lat="-15.6609910" lon="-47.8366479" timestamp="2014-02-24T01:56:51Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="34739534" id="2479614777" lat="-15.6664602" lon="-47.8217441" timestamp="2015-10-19T17:48:59Z" uid="3087928" user="Rusleykcruz" version="2">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="19225202" id="2559940568" lat="-15.7650049" lon="-47.8913690" timestamp="2013-12-01T22:42:39Z" uid="401472" user="ftrebien" version="2">
+    <tag k="addr:housenumber" v="1" />
+    <tag k="addr:street" v="SCLRN 708 Bloco G" />
+  </node>
+  <node changeset="39709566" id="2577739824" lat="-15.8687386" lon="-47.8209047" timestamp="2016-06-01T12:30:03Z" uid="2935804" user="charliekowacks" version="2">
+    <tag k="amenity" v="restaurant" />
+    <tag k="name" v="Alho Dourado" />
+  </node>
+  <node changeset="19455746" id="2580043738" lat="-15.8048762" lon="-48.1225129" timestamp="2013-12-14T21:44:16Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="amenity" v="fast_food" />
+    <tag k="name" v="Panificadora Olivier" />
+  </node>
+  <node changeset="19647408" id="2595545134" lat="-15.8536508" lon="-48.0446558" timestamp="2013-12-26T16:52:42Z" uid="1352904" user="street0501" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="19647408" id="2595545335" lat="-15.8509932" lon="-48.0696969" timestamp="2013-12-26T16:52:45Z" uid="1352904" user="street0501" version="1">
+    <tag k="power" v="pole" />
+  </node>
+  <node changeset="19647974" id="2595578045" lat="-15.7704996" lon="-48.2735580" timestamp="2013-12-26T17:24:24Z" uid="1352904" user="street0501" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20305808" id="2646000155" lat="-16.0911550" lon="-48.1631630" timestamp="2014-01-31T19:38:48Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20305808" id="2646000489" lat="-16.4462487" lon="-48.1686938" timestamp="2014-01-31T19:38:54Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20305808" id="2646000932" lat="-16.8005229" lon="-48.1638825" timestamp="2014-01-31T19:39:00Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20305808" id="2646001715" lat="-17.1383631" lon="-48.1685013" timestamp="2014-01-31T19:39:07Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20321124" id="2648082437" lat="-17.4712808" lon="-48.2169328" timestamp="2014-02-01T18:13:29Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20321124" id="2648082559" lat="-17.7394067" lon="-48.4407768" timestamp="2014-02-01T18:13:32Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="20523579" id="2668710970" lat="-15.8463435" lon="-48.0426297" timestamp="2014-02-12T14:38:28Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="amenity" v="bar" />
+    <tag k="name" v="Usina Beer" />
+  </node>
+  <node changeset="20586270" id="2673740559" lat="-15.7906330" lon="-47.9769038" timestamp="2014-02-15T22:27:19Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="name" v="Multi Car- Cidade do Automóvel" />
+    <tag k="shop" v="car" />
+  </node>
+  <node changeset="20587051" id="2673888488" lat="-15.8763590" lon="-48.0584183" timestamp="2014-02-15T23:40:12Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="name" v="Setor de Mansões de Samambaia - SMSE - Setor de Mansões Sudeste" />
+    <tag k="place" v="suburb" />
+  </node>
+  <node changeset="37810144" id="2678525472" lat="-15.7619940" lon="-47.8817131" timestamp="2016-03-13T23:35:09Z" uid="381516" user="wesleygmartins" version="3">
+    <tag k="name" v="SQN 208" />
+    <tag k="official_name" v="Superquadra Norte 208" />
+    <tag k="place" v="neighbourhood" />
+  </node>
+  <node changeset="32673787" id="2678830147" lat="-15.8095824" lon="-47.8849959" timestamp="2015-07-16T13:24:39Z" uid="360183" user="wille" version="3">
+    <tag k="addr:street" v="CLS 403" />
+    <tag k="amenity" v="bar" />
+    <tag k="name" v="Adega Piantas" />
+    <tag k="shop" v="beverages" />
+  </node>
+  <node changeset="54547840" id="2691204537" lat="-15.7808040" lon="-47.9126850" timestamp="2017-12-11T18:56:11Z" uid="549284" user="BladeTC" version="4">
+    <tag k="amenity" v="school" />
+    <tag k="name" v="Escola de Governo do Distrito Federal - EGOV" />
+  </node>
+  <node changeset="35634152" id="2691215134" lat="-15.8681978" lon="-47.9722707" timestamp="2015-11-28T19:03:24Z" uid="463507" user="naoliv" version="3">
+    <tag k="amenity" v="library" />
+    <tag k="name" v="Gráfica Esplanada" />
+  </node>
+  <node changeset="20793373" id="2691239367" lat="-15.8138315" lon="-47.8905933" timestamp="2014-02-26T16:06:03Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="addr:place" v="Asa Sul" />
+    <tag k="addr:street" v="CLS 404 Bloco A Loja 27" />
+    <tag k="amenity" v="restaurant" />
+    <tag k="cuisine" v="international" />
+    <tag k="name" v="Doce Delicia" />
+    <tag k="phone" v="3321-1412" />
+  </node>
+  <node changeset="20933448" id="2702739567" lat="-15.6581289" lon="-47.7901219" timestamp="2014-03-05T16:30:57Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="amenity" v="fuel" />
+    <tag k="operator" v="Shell" />
+  </node>
+  <node changeset="20934195" id="2702769058" lat="-15.6522763" lon="-47.8146170" timestamp="2014-03-05T17:07:01Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="building" v="civic" />
+    <tag k="name" v="Funai Sobradinho" />
+    <tag k="office" v="government" />
+  </node>
+  <node changeset="21183773" id="2726097147" lat="-15.7563384" lon="-47.7783745" timestamp="2014-03-18T22:55:37Z" uid="1976381" user="Alann Jaksnon" version="1">
+    <tag k="amenity" v="police" />
+    <tag k="name" v="Polícia Militar - PCS 041" />
+    <tag k="note" v="PMDF" />
+    <tag k="phone" v="3910-1041" />
+  </node>
+  <node changeset="21232127" id="2732090697" lat="-15.8072927" lon="-47.9333161" timestamp="2014-03-21T18:45:40Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="addr:street" v="CLSW 105" />
+    <tag k="name" v="Super Maia" />
+    <tag k="shop" v="supermarket" />
+  </node>
+  <node changeset="22066556" id="2829274266" lat="-15.7838894" lon="-47.8875970" timestamp="2014-05-01T15:40:14Z" uid="882114" user="azxcx" version="2">
+    <tag k="highway" v="bus_stop" />
+    <tag k="shelter" v="yes" />
+  </node>
+  <node changeset="22273103" id="2850686276" lat="-15.8983500" lon="-47.7986589" timestamp="2014-05-11T15:03:51Z" uid="24551" user="teste18" version="1">
+    <tag k="natural" v="tree" />
+  </node>
+  <node changeset="22642756" id="2889531324" lat="-15.8018649" lon="-47.8870557" timestamp="2014-05-30T17:48:23Z" uid="882114" user="azxcx" version="2">
+    <tag k="highway" v="bus_stop" />
+  </node>
+  <node changeset="47921692" id="2890143305" lat="-15.8939072" lon="-47.7980742" timestamp="2017-04-19T00:15:18Z" uid="3009268" user="Andersperes" version="2">
+    <tag k="building:levels" v="2" />
+  </node>
+  <node changeset="24028558" id="2954463733" lat="-16.2551965" lon="-48.7164601" timestamp="2014-07-08T16:04:59Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="24031124" id="2954733630" lat="-16.0887864" lon="-48.2973082" timestamp="2014-07-08T18:09:52Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="24233725" id="2969736331" lat="-15.8355124" lon="-47.8036990" timestamp="2014-07-19T06:31:13Z" uid="2178867" user="renandelima" version="2">
+    <tag k="access" v="private" />
+    <tag k="barrier" v="lift_gate" />
+  </node>
+  <node changeset="25007481" id="3041670125" lat="-15.7506083" lon="-47.8937613" timestamp="2014-08-25T16:08:10Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="pharmacy" />
+    <tag k="dispensing" v="yes" />
+    <tag k="name" v="Drogaria Rosário" />
+  </node>
+  <node changeset="48265869" id="3051977281" lat="-15.7567262" lon="-47.8913837" timestamp="2017-04-29T20:03:50Z" uid="360183" user="wille" version="4">
+    <tag k="amenity" v="cafe" />
+    <tag k="internet_access" v="no" />
+    <tag k="name" v="Amor à Torta" />
+    <tag k="opening_hours" v="Mo-Fr 07:30-19:30; Sa 08:00-18:00" />
+    <tag k="wheelchair" v="yes" />
+  </node>
+  <node changeset="26414656" id="3054559231" lat="-15.7589145" lon="-47.8883803" timestamp="2014-10-29T15:21:11Z" uid="360183" user="wille" version="2">
+    <tag k="name" v="Panificadora Favorita" />
+    <tag k="shop" v="bakery" />
+  </node>
+  <node changeset="30076873" id="3074795680" lat="-15.7587670" lon="-47.8879789" timestamp="2015-04-08T23:20:30Z" uid="360183" user="wille" version="3">
+    <tag k="amenity" v="pharmacy" />
+    <tag k="dispensing" v="yes" />
+    <tag k="name" v="Drogaria Médica" />
+  </node>
+  <node changeset="49404394" id="3093842338" lat="-15.7577494" lon="-47.8834576" timestamp="2017-06-09T18:20:13Z" uid="360183" user="wille" version="3">
+    <tag k="amenity" v="fast_food" />
+    <tag k="cuisine" v="sandwich" />
+    <tag k="drive_through" v="no" />
+    <tag k="name" v="Subway" />
+    <tag k="opening_hours" v="24/7" />
+    <tag k="takeaway" v="yes" />
+  </node>
+  <node changeset="25756766" id="3102568281" lat="-15.7432545" lon="-47.8971686" timestamp="2014-09-29T21:50:22Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="name" v="MDS - Ministério do Desenvolvimento Social e Combate à Fome" />
+    <tag k="office" v="government" />
+  </node>
+  <node changeset="31283114" id="3154455966" lat="-15.7366515" lon="-47.8957742" timestamp="2015-05-19T13:00:37Z" uid="360183" user="wille" version="3">
+    <tag k="name" v="Massagem Ayurvédica, Shiatsu e Terapêutica Relaxante" />
+    <tag k="phone" v="+55 61 81885338" />
+    <tag k="shop" v="massage" />
+  </node>
+  <node changeset="26516396" id="3163905068" lat="-15.7417450" lon="-47.8843048" timestamp="2014-11-03T00:33:35Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="bench" />
+    <tag k="backrest" v="yes" />
+  </node>
+  <node changeset="31496452" id="3193327899" lat="-15.1628908" lon="-48.8920907" timestamp="2015-05-27T08:24:56Z" uid="13203" user="bahnpirat" version="2">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="27632083" id="3202124726" lat="-15.7447345" lon="-47.8866688" timestamp="2014-12-22T15:11:31Z" uid="360183" user="wille" version="2">
+    <tag k="amenity" v="restaurant" />
+    <tag k="cuisine" v="japanese" />
+    <tag k="name" v="Nazo sushibar" />
+  </node>
+  <node changeset="42015965" id="3362304638" lat="-15.7805472" lon="-47.8860928" timestamp="2016-09-09T02:06:50Z" uid="360183" user="wille" version="5">
+    <tag k="amenity" v="restaurant" />
+    <tag k="cuisine" v="pizza" />
+    <tag k="name" v="A melhor do mundo pizzaria" />
+    <tag k="wheelchair" v="yes" />
+  </node>
+  <node changeset="29992924" id="3439334207" lat="-15.7366342" lon="-47.8995574" timestamp="2015-04-05T14:02:03Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="parking_entrance" />
+    <tag k="parking" v="underground" />
+  </node>
+  <node changeset="32496213" id="3640980250" lat="-15.7529899" lon="-47.8896976" timestamp="2015-07-08T13:57:33Z" uid="360183" user="wille" version="1">
+    <tag k="addr:street" v="CLN 111" />
+    <tag k="amenity" v="restaurant" />
+    <tag k="name" v="Bellator" />
+  </node>
+  <node changeset="34709876" id="3768087693" lat="-15.8003070" lon="-47.9367342" timestamp="2015-10-18T12:21:09Z" uid="3087928" user="Rusleykcruz" version="3">
+    <tag k="access" v="private" />
+    <tag k="barrier" v="gate" />
+  </node>
+  <node changeset="36839322" id="3768730374" lat="-15.7831717" lon="-47.8834145" timestamp="2016-01-27T15:33:45Z" uid="360183" user="wille" version="3">
+    <tag k="amenity" v="cafe" />
+    <tag k="name" v="Rosa's Café" />
+  </node>
+  <node changeset="35665183" id="3868952064" lat="-15.7805619" lon="-47.7786779" timestamp="2015-11-30T13:09:40Z" uid="3147342" user="jadson_reis" version="1">
+    <tag k="natural" v="tree" />
+  </node>
+  <node changeset="35829839" id="3883558320" lat="-15.7673710" lon="-47.8605282" timestamp="2015-12-08T16:46:29Z" uid="360183" user="wille" version="1">
+    <tag k="man_made" v="flagpole" />
+  </node>
+  <node changeset="55809500" id="3889504859" lat="-15.7466864" lon="-47.8830930" timestamp="2018-01-27T17:17:44Z" uid="360183" user="wille" version="2">
+    <tag k="amenity" v="recycling" />
+    <tag k="location" v="overground" />
+    <tag k="recycling:cans" v="yes" />
+    <tag k="recycling:glass" v="yes" />
+    <tag k="recycling:paper" v="yes" />
+    <tag k="recycling_type" v="container" />
+  </node>
+  <node changeset="37203286" id="3923337361" lat="-15.7696671" lon="-47.8903892" timestamp="2016-02-14T12:38:07Z" uid="360183" user="wille" version="2">
+    <tag k="name" v="Construdantas" />
+    <tag k="shop" v="hardware" />
+  </node>
+  <node changeset="36595253" id="3948172874" lat="-15.7987996" lon="-47.8831144" timestamp="2016-01-15T15:20:48Z" uid="360183" user="wille" version="1">
+    <tag k="name" v="Sapato da Corte" />
+    <tag k="shop" v="shoes" />
+  </node>
+  <node changeset="39292060" id="3958115053" lat="-15.7983365" lon="-47.8930241" timestamp="2016-05-13T13:40:33Z" uid="463504" user="erickdeoliveiraleal" version="2">
+    <tag k="name" v="Prosystems Ltda" />
+    <tag k="shop" v="yes" />
+  </node>
+  <node changeset="38064954" id="4078358101" lat="-15.7578010" lon="-47.8907180" timestamp="2016-03-25T15:24:03Z" uid="381516" user="wesleygmartins" version="1">
+    <tag k="name" v="SQN 310" />
+    <tag k="place" v="neighbourhood" />
+  </node>
+  <node changeset="38101598" id="4081336791" lat="-15.7902186" lon="-47.8851950" timestamp="2016-03-27T15:20:48Z" uid="360183" user="wille" version="1">
+    <tag k="entrance" v="main" />
+  </node>
+  <node changeset="38288237" id="4097119604" lat="-15.8132023" lon="-47.9008970" timestamp="2016-04-04T11:12:23Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="waste_basket" />
+  </node>
+  <node changeset="38441981" id="4110751147" lat="-15.7892223" lon="-47.8806522" timestamp="2016-04-10T03:17:02Z" uid="360183" user="wille" version="1">
+    <tag k="crossing" v="traffic_signals" />
+    <tag k="highway" v="traffic_signals" />
+  </node>
+  <node changeset="38667089" id="4130508047" lat="-15.7773911" lon="-47.8826569" timestamp="2016-04-18T13:04:45Z" uid="360183" user="wille" version="1">
+    <tag k="name" v="Gife Baby" />
+    <tag k="shop" v="clothes" />
+  </node>
+  <node changeset="45635342" id="4173569020" lat="-15.8701961" lon="-47.9325470" timestamp="2017-01-29T23:45:38Z" uid="385027" user="Ori952" version="2">
+    <tag k="highway" v="bus_stop" />
+  </node>
+  <node changeset="39820279" id="4226892321" lat="-15.8696771" lon="-47.7972195" timestamp="2016-06-05T16:34:18Z" uid="2935804" user="charliekowacks" version="1">
+    <tag k="barrier" v="lift_gate" />
+  </node>
+  <node changeset="39885235" id="4231979454" lat="-15.7993609" lon="-47.9720339" timestamp="2016-06-08T13:55:16Z" uid="2173970" user="LucFreitas" version="1">
+    <tag k="railway" v="buffer_stop" />
+  </node>
+  <node changeset="41235365" id="4335336292" lat="-15.7999440" lon="-48.0426284" timestamp="2016-08-04T11:28:54Z" uid="381516" user="wesleygmartins" version="1">
+    <tag k="natural" v="tree" />
+  </node>
+  <node changeset="41238673" id="4335515073" lat="-15.8365592" lon="-48.0315153" timestamp="2016-08-04T14:01:19Z" uid="381516" user="wesleygmartins" version="1">
+    <tag k="addr:housenumber" v="16" />
+    <tag k="addr:street" v="Avenida Flamboyant" />
+  </node>
+  <node changeset="41518786" id="4354530387" lat="-15.8441145" lon="-48.0309323" timestamp="2016-08-17T18:43:32Z" uid="381516" user="wesleygmartins" version="1">
+    <tag k="addr:housenumber" v="35" />
+    <tag k="addr:street" v="Avenida Jacarandá" />
+  </node>
+  <node changeset="44472355" id="4385405437" lat="-15.7385275" lon="-47.8885360" timestamp="2016-12-17T15:19:47Z" uid="360183" user="wille" version="2">
+    <tag k="addr:street" v="CLN 216 BL. D" />
+    <tag k="name" v="Espaço da Carne" />
+    <tag k="shop" v="butcher" />
+  </node>
+  <node changeset="42133699" id="4399534395" lat="-15.7373245" lon="-47.9014572" timestamp="2016-09-13T19:10:05Z" uid="4568650" user="Diego Romanny F Santana" version="1">
+    <tag k="addr:postcode" v="70770-910" />
+    <tag k="addr:street" v="STN" />
+    <tag k="amenity" v="bank" />
+    <tag k="name" v="Banco do Brasil - Ed. Sede IV - Complexo Central de Tecnologia" />
+    <tag k="name:pt" v="Banco do Brasil - Ed. Sede IV - Complexo Central de Tecnologia" />
+  </node>
+  <node changeset="42580070" id="4427555050" lat="-15.8304543" lon="-48.0335938" timestamp="2016-10-02T11:18:28Z" uid="381516" user="wesleygmartins" version="1">
+    <tag k="maxspeed" v="40" />
+    <tag k="traffic_sign" v="maxspeed" />
+  </node>
+  <node changeset="42829764" id="4443884799" lat="-15.8313347" lon="-48.0389291" timestamp="2016-10-12T12:57:40Z" uid="381516" user="wesleygmartins" version="1">
+    <tag k="traffic_sign" v="stop" />
+  </node>
+  <node changeset="43487206" id="4486881890" lat="-15.7735165" lon="-47.8767302" timestamp="2016-11-08T13:32:37Z" uid="360183" user="wille" version="2">
+    <tag k="amenity" v="pub" />
+    <tag k="name" v="Bar BH" />
+    <tag k="name:pt" v="Bar BH" />
+  </node>
+  <node changeset="45144366" id="4606474793" lat="-15.8078993" lon="-47.8966656" timestamp="2017-01-13T19:43:04Z" uid="360183" user="wille" version="1">
+    <tag k="name" v="Erika" />
+    <tag k="shop" v="clothes" />
+    <tag k="wheelchair" v="no" />
+  </node>
+  <node changeset="45635342" id="4642673428" lat="-15.8707795" lon="-47.9021801" timestamp="2017-01-30T00:44:18Z" uid="385027" user="Ori952" version="2">
+    <tag k="barrier" v="gate" />
+  </node>
+  <node changeset="45627298" id="4642697056" lat="-15.8693959" lon="-47.9243710" timestamp="2017-01-29T19:28:11Z" uid="385027" user="Ori952" version="1">
+    <tag k="highway" v="crossing" />
+  </node>
+  <node changeset="46378781" id="4704236904" lat="-15.7713849" lon="-47.8765878" timestamp="2017-02-24T20:25:46Z" uid="5374678" user="daniossauro" version="1">
+    <tag k="amenity" v="bench" />
+  </node>
+  <node changeset="46600760" id="4718732883" lat="-15.8354705" lon="-48.0000986" timestamp="2017-03-05T16:50:16Z" uid="72235" user="Basstoelpel" version="1">
+    <tag k="design" v="delta" />
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="55175619" id="4726189526" lat="-15.8840529" lon="-48.0165035" timestamp="2018-01-05T03:26:08Z" uid="696713" user="Caetano Santos" version="2">
+    <tag k="name" v="Padaria Nacional" />
+    <tag k="shop" v="bakery" />
+  </node>
+  <node changeset="48269353" id="4818188929" lat="-15.7672950" lon="-47.9499744" timestamp="2017-04-29T23:08:07Z" uid="360183" user="wille" version="2">
+    <tag k="addr:housenumber" v="730" />
+    <tag k="addr:postcode" v="70631-035" />
+    <tag k="addr:street" v="Rua G" />
+  </node>
+  <node changeset="48265691" id="4825889843" lat="-15.7336442" lon="-47.8988215" timestamp="2017-04-29T19:56:38Z" uid="360183" user="wille" version="1">
+    <tag k="name" v="O Boticário" />
+    <tag k="shop" v="cosmetics" />
+  </node>
+  <node changeset="49750396" id="4931106782" lat="-15.7409329" lon="-47.8951726" timestamp="2017-06-22T16:00:02Z" uid="360183" user="wille" version="1">
+    <tag k="organic" v="only" />
+    <tag k="shop" v="farm" />
+  </node>
+  <node changeset="50098905" id="4956076224" lat="-15.8849794" lon="-48.1009831" timestamp="2017-07-07T04:53:30Z" uid="6243516" user="Daniel Albuquerque" version="1">
+    <tag k="name" v="Ferragens" />
+    <tag k="name:pt" v="Ferragens" />
+    <tag k="shop" v="car_repair" />
+  </node>
+  <node changeset="50211725" id="4959848749" lat="-15.7867287" lon="-47.8839161" timestamp="2017-07-11T20:18:23Z" uid="360183" user="wille" version="2">
+    <tag k="level" v="1" />
+    <tag k="name" v="Helio" />
+    <tag k="shop" v="hairdresser" />
+  </node>
+  <node changeset="50584162" id="4994508891" lat="-15.7227533" lon="-47.8529035" timestamp="2017-07-26T10:35:54Z" uid="360183" user="wille" version="1">
+    <tag k="noexit" v="yes" />
+  </node>
+  <node changeset="50599719" id="4995485361" lat="-15.8354370" lon="-48.0486170" timestamp="2017-07-26T19:59:14Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="amenity" v="fast_food" />
+    <tag k="name" v="Secreto" />
+  </node>
+  <node changeset="50731531" id="5005760526" lat="-15.7911251" lon="-48.1231178" timestamp="2017-07-31T19:27:53Z" uid="6367402" user="Theo Francieri Britto" version="1">
+    <tag k="name" v="Atalaia" />
+    <tag k="name:pt" v="Atalaia" />
+    <tag k="shop" v="butcher" />
+  </node>
+  <node changeset="51028508" id="5028228526" lat="-15.8015016" lon="-47.9258306" timestamp="2017-08-11T10:20:20Z" uid="360183" user="wille" version="1">
+    <tag k="name" v="Pães &amp; Vinhos" />
+    <tag k="shop" v="bakery" />
+  </node>
+  <node changeset="51643070" id="5073352052" lat="-15.7573464" lon="-47.8730193" timestamp="2017-09-01T13:10:12Z" uid="360183" user="wille" version="1">
+    <tag k="entrance" v="main" />
+  </node>
+  <node changeset="51827201" id="5087302622" lat="-15.7452496" lon="-47.8866603" timestamp="2017-09-07T22:11:42Z" uid="360183" user="wille" version="2">
+    <tag k="amenity" v="cafe" />
+    <tag k="level" v="-1" />
+    <tag k="name" v="Labbora Cafés Especiais" />
+    <tag k="opening_hours" v="Mo-Fr 10:00-19:00" />
+  </node>
+  <node changeset="52389477" id="5131134821" lat="-15.7659355" lon="-47.8774948" timestamp="2017-09-26T16:33:46Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="bar" />
+    <tag k="name" v="Orbe 7" />
+    <tag k="name:pt" v="Orbe 7" />
+  </node>
+  <node changeset="53266198" id="5191165223" lat="-15.7707488" lon="-47.8839755" timestamp="2017-10-26T15:26:43Z" uid="360183" user="wille" version="1">
+    <tag k="name" v="Plano Imobiliária" />
+    <tag k="office" v="estate_agent" />
+  </node>
+  <node changeset="53370693" id="5200301954" lat="-15.7743234" lon="-47.8852678" timestamp="2017-10-30T15:31:42Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="bicycle_parking" />
+    <tag k="bicycle_parking" v="stands" />
+  </node>
+  <node changeset="53700523" id="5223804027" lat="-15.8288401" lon="-48.0082240" timestamp="2017-11-11T21:25:32Z" uid="360183" user="wille" version="1">
+    <tag k="barrier" v="gate" />
+  </node>
+  <node changeset="53890925" id="5235769407" lat="-15.7755572" lon="-47.9997525" timestamp="2017-11-18T02:03:24Z" uid="1852029" user="smaprs" version="1">
+    <tag k="entrance" v="main" />
+  </node>
+  <node changeset="54409222" id="5268388836" lat="-15.8230408" lon="-48.0168775" timestamp="2017-12-06T18:05:25Z" uid="7114521" user="Tadachi" version="1">
+    <tag k="natural" v="tree" />
+  </node>
+  <node changeset="54540563" id="5277641563" lat="-15.7828811" lon="-47.9157248" timestamp="2017-12-11T13:48:53Z" uid="549284" user="BladeTC" version="1">
+    <tag k="crossing" v="unmarked" />
+    <tag k="highway" v="crossing" />
+    <tag k="source" v="Esri" />
+  </node>
+  <node changeset="54547840" id="5278191395" lat="-15.7739356" lon="-47.9209471" timestamp="2017-12-11T18:56:08Z" uid="549284" user="BladeTC" version="1">
+    <tag k="natural" v="tree" />
+  </node>
+  <node changeset="54552888" id="5278632794" lat="-15.7881927" lon="-47.9013612" timestamp="2017-12-11T23:24:05Z" uid="549284" user="BladeTC" version="1">
+    <tag k="crossing" v="unmarked" />
+    <tag k="highway" v="crossing" />
+    <tag k="source" v="Esri" />
+  </node>
+  <node changeset="55221794" id="5324519894" lat="-15.8288510" lon="-48.0323084" timestamp="2018-01-06T20:59:10Z" uid="463504" user="erickdeoliveiraleal" version="1">
+    <tag k="amenity" v="fast_food" />
+    <tag k="name" v="Supremo Burger" />
+  </node>
+  <node changeset="55522391" id="5344944778" lat="-15.2546253" lon="-48.8377476" timestamp="2018-01-17T13:52:07Z" uid="1204081" user="ElementoGEO" version="1">
+    <tag k="power" v="tower" />
+  </node>
+  <node changeset="55787611" id="5364557856" lat="-15.8809028" lon="-48.0750850" timestamp="2018-01-26T21:53:43Z" uid="7327948" user="Chorumelas" version="2">
+    <tag k="addr:street" v="Qn 508 Conjunto 4 Samambaia Sul, Brasília - DF" />
+    <tag k="amenity" v="place_of_worship" />
+    <tag k="denomination" v="evangelical" />
+    <tag k="name" v="Segunda Igreja Batista" />
+    <tag k="religion" v="christian" />
+  </node>
+  <node changeset="55844459" id="5369153621" lat="-15.7975383" lon="-48.0457510" timestamp="2018-01-28T23:38:45Z" uid="360183" user="wille" version="1">
+    <tag k="amenity" v="school" />
+    <tag k="name" v="Instituto de Educação Montesquieu" />
+  </node>
+  <node changeset="55847300" id="5369342916" lat="-15.8599666" lon="-48.0719679" timestamp="2018-01-29T03:13:23Z" uid="7328059" user="Ryuuzakira" version="1">
+    <tag k="bus" v="yes" />
+    <tag k="highway" v="bus_stop" />
+    <tag k="public_transport" v="platform" />
+  </node>
+  </osm>

@@ -1,0 +1,457 @@
+<h1>OpenStreetMap Data Wrangling</h1>
+<h2>Python and MongoDB</h2>
+<hr>
+<p><strong>Author :</strong> Matheus Willian Machado<br>
+<strong>Date :</strong> February 20, 2018</p>
+<hr>
+<h2>Project Overview</h2>
+<blockquote>
+<p>Choose any area of the world in https://www.openstreetmap.org and use data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the OpenStreetMap data for a part of the world that you care about.<br>
+Choose to learn SQL or MongoDB and apply your chosen schema to the project.</p>
+</blockquote>
+<hr>
+<h2>Introduction</h2>
+<p><img src="./area.png" alt="Federal District, Brazil"></p>
+<p><strong>Area:</strong> <a href="https://www.openstreetmap.org/#map=12/-15.7501/-47.8784" title="OpenStreetMap">Federal District, Brazil</a><br>
+<strong>URL:</strong> <a href="https://overpass-api.de/api/map?bbox=-48.1479,-15.9003,-47.6089,-15.5996">https://overpass-api.de/api/map?bbox=-48.1479,-15.9003,-47.6089,-15.5996</a><br>
+<strong>Motivation :</strong> Area around my hometown (Brasilia).<br>
+<strong>File Name :</strong> <a href="./area.osm">area.osm</a>.<br>
+<strong>File Size :</strong> 82,1 MB.</p>
+<hr>
+<h2>Sampling</h2>
+<p><a href="./sample.py">sample.py</a></p>
+<p><strong>For the OpenStreetMap file:</strong></p>
+<ul>
+<li>[x] Open the chosen area file that you downloaded.</li>
+<li>[x] Count first level elements that are in the xml.</li>
+<li>[x] Find children and attributes for each tag and so on with children.</li>
+<li>[x] Remove elements that appears just once.</li>
+<li>[x] Create a sample file for each main element.</li>
+</ul>
+<p>The first step was to download the XML file from the <em>URL</em>, referring to the <em>Area</em>.<br>
+After downloading the file, its structure was investigated.<br>
+The file contains the following first level elements:</p>
+<p><strong>First Level Elements</strong></p>
+<pre><code class="language-json">{'bounds': 1,
+ 'meta': 1,
+ 'node': 350669,
+ 'note': 1,
+ 'relation': 867,
+ 'way': 74821
+}
+</code></pre>
+<p>For each element, attributes and sub-elements (children) were studied.</p>
+<p><strong>Children and Attributes:</strong></p>
+<pre><code class="language-json">{'bounds': {'attributes': ['minlat', 'minlon', 'maxlat', 'maxlon'], 'children': {}},
+ 'meta': {'attributes': ['osm_base'], 'children': {}},
+ 'node': {'attributes': ['id','lat','lon','version','timestamp','changeset','uid','user'],
+          'children': {'tag': {'attributes': ['k', 'v'],
+                               'children': {}
+                              }
+                      }
+         },
+ 'note': {'attributes': [], 'children': {}},
+ 'relation': {'attributes': ['id','version','timestamp','changeset','uid','user'],
+              'children': {'member': {'attributes': ['type', 'ref', 'role'],
+                                      'children': {}
+                                     },
+                           'tag': {'attributes': ['k', 'v'],
+                                   'children': {}
+                                  }
+                          }
+             },
+ 'way': {'attributes': ['id', 'version', 'timestamp', 'changeset', 'uid', 'user'],
+         'children': {'nd': {'attributes': ['ref'],
+                             'children': {}
+                            },
+                      'tag': {'attributes': ['k', 'v'],
+                              'children': {}
+                             }
+                     }
+        }
+}
+</code></pre>
+<p>It was decided to remove elements that appears just once, as they won't be part of the analysis.<br>
+And for a better looking at the data, a sample of each tag was created at the proportion of one per hundred records.</p>
+<p><strong>Sample Files</strong></p>
+<ul>
+<li><a href="./node_sample.osm"><strong>node_sample.osm</strong></a> with 3506 samples and 35,7 KB.</li>
+<li><a href="./way_sample.osm"><strong>way_sample.osm</strong></a> with 748 samples and 276 KB.</li>
+<li><a href="./relation_sample.osm"><strong>relation_sample.osm</strong></a> with 8 samples and 71,4 KB.</li>
+</ul>
+<hr>
+<h2>Auditing</h2>
+<p><a href="./audit.py">audit.py</a></p>
+<p><strong>For the main elements:</strong></p>
+<ul>
+<li>[x] Test the types of attributes according to the data_types.</li>
+<li>[x] Find special chars on string attributes.</li>
+<li>[x] Count the type of key values from tag elements.</li>
+<li>[x] Show "other" key values (for the cleaning process).</li>
+</ul>
+<p>On the second step, all attributes were tested according to the "data_types".<br>
+The data_types is a python dictionary that maps the attribute with its type.<br>
+To "int", "float" and "timestamp" fields conversion commands were applied.<br>
+For "string" fields, special characters were searched and shown.<br>
+"Unaudited" fields were skipped by the audit because they are free writing fields.</p>
+<p><strong>Data Types</strong></p>
+<pre><code class="language-python">{<span class="hljs-string">'int'</span>:[<span class="hljs-string">'id'</span>,<span class="hljs-string">'version'</span>,<span class="hljs-string">'changeset'</span>,<span class="hljs-string">'uid'</span>,<span class="hljs-string">'ref'</span>],
+ <span class="hljs-string">'float'</span>:[<span class="hljs-string">'lat'</span>,<span class="hljs-string">'lon'</span>],
+ <span class="hljs-string">'timestamp'</span>:[<span class="hljs-string">'timestamp'</span>],
+ <span class="hljs-string">'string'</span>:[<span class="hljs-string">'type'</span>,<span class="hljs-string">'role'</span>,<span class="hljs-string">'k'</span>],
+ <span class="hljs-string">'unaudited'</span>:[<span class="hljs-string">'user'</span>,<span class="hljs-string">'v'</span>]
+}
+</code></pre>
+<p>Special chars were found in "endereço" and "currency:R$".<br>
+For the first one was chosen to change it to "addr:street",
+for the other one to drop it.</p>
+<blockquote>
+<p>Special char ç found in :  endereço<br>
+Special char $ found in :  currency:R$</p>
+</blockquote>
+<p>The "k" attribute, from the "tag" elements, had a more detailed audit.<br>
+They were classified and counted according to the following:</p>
+<p><strong>Tag.k Classification</strong></p>
+<ul>
+<li>lower</li>
+<li>lower_colon</li>
+<li>lower_multi_colon</li>
+<li>other</li>
+</ul>
+<p>Lower keys could only be formed with lowercase letters, "-" and "_".<br>
+Lower_colon keys were Lower keys with only one colon (":").<br>
+Lower_multi_colon keys were Lower keys with two or more colons.<br>
+And "other" were all the other keys that didn't match the above categories.</p>
+<p><strong>Tag.k Auditing</strong></p>
+<pre><code class="language-json">{'lower': 174753,
+ 'lower_colon': 10727,
+ 'lower_multi_colon': 244,
+ 'other': [175,
+           {'2016olympicgames',
+            '3dr:type',
+            'Futsal',
+            'IBGE:CD_ADMINIS',
+            'IBGE:GEOCODIGO',
+            'ISO3166-1',
+            'ISO3166-1:alpha2',
+            'ISO3166-1:alpha3',
+            'ISO3166-1:numeric',
+            'ISO3166-2',
+            'building:levels_1',
+            'capital_ISO3166-1',
+            'currency:BRL',
+            'currency:R$',
+            'currency:USD',
+            'endereço',
+            'fuel:octane_80',
+            'fuel:octane_91',
+            'fuel:octane_95',
+            'landuse_1',
+            'landuse_2',
+            'leisure_1',
+            'leisure_2',
+            'natural_1',
+            'natural_2',
+            'ref:CNUC',
+            'sport_1',
+            'sport_2',
+            'sport_3',
+            'surface_1',
+            'water_1'
+           }
+          ]
+}
+</code></pre>
+<hr>
+<h2>Cleaning</h2>
+<p><a href="./clean.py">clean.py</a></p>
+<p><strong>For the attributes of the tag elements:</strong></p>
+<ul>
+<li>[x] Change key 'endereço' to 'addr:street' and 'Futsal' to 'sport'.</li>
+<li>[x] Change multi_colon to colon keys.</li>
+<li>[x] Expand abbreviations on values.</li>
+<li>[x] Show all changed tags.</li>
+</ul>
+<p>This process was focused on the tag elements.<br>
+Based on the audit, some fields were selected for the cleaning process,
+like change tag.k value "endereço" to "addr:street" and "Futsal" to "sport".<br>
+Multi_colon keys were changed to colon keys, so there would be only keys with two or less levels.<br>
+Some abbreviations on tag.v values were expanded according to the values dictionary, for a better uniformity of the data.<br>
+The values dictionary is a python dictionary that maps the abbreviation with its full name.</p>
+<p><strong>Values Dictionary</strong></p>
+<pre><code class="language-python">{<span class="hljs-string">'Cond.'</span>:<span class="hljs-string">'Condomínio '</span>,
+ <span class="hljs-string">'Av.'</span>:<span class="hljs-string">'Avenida '</span>,
+ <span class="hljs-string">'AV.'</span>:<span class="hljs-string">'Avenida '</span>,
+ <span class="hljs-string">'Ed.'</span>:<span class="hljs-string">'Edifício '</span>,
+ <span class="hljs-string">'ED.'</span>:<span class="hljs-string">'Edifício '</span>,
+ <span class="hljs-string">'A.E.'</span>:<span class="hljs-string">'Área Especial '</span>,
+ <span class="hljs-string">'Bl.'</span>:<span class="hljs-string">'Bloco '</span>,
+ <span class="hljs-string">'BL.'</span>:<span class="hljs-string">'Bloco '</span>,
+ <span class="hljs-string">'Qd.'</span>:<span class="hljs-string">'Quadra '</span>,
+ <span class="hljs-string">'Q. '</span>:<span class="hljs-string">'Quadra '</span>,
+ <span class="hljs-string">'Conj.'</span>:<span class="hljs-string">'Conjunto '</span>,
+ <span class="hljs-string">'Cj.'</span>:<span class="hljs-string">'Conjunto '</span>,
+ <span class="hljs-string">'Ch.'</span>:<span class="hljs-string">'Chácara '</span>,
+ <span class="hljs-string">'Lt.'</span>:<span class="hljs-string">'Lote '</span>
+}
+</code></pre>
+<p>All changes were shown as output, this way it was possible to validate them.</p>
+<hr>
+<h2>XML to Json</h2>
+<p><a href="./xml2json.py">xml2json.py</a></p>
+<p><strong>For the data:</strong></p>
+<ul>
+<li>[x] Clean tags according to clean.py.</li>
+<li>[x] Fix multi-tags to just one tag with all values.</li>
+<li>[x] Drop all "other keys" remaining.</li>
+<li>[x] Shape address information into a subfield.</li>
+<li>[x] Convert xml data to json.</li>
+</ul>
+<p>Still part of the cleaning plan, the "other" tags were divided into three groups.</p>
+<p><strong>Group 1:</strong></p>
+<ul>
+<li>Futsal</li>
+<li>endereço</li>
+</ul>
+<p>The group 1 was covered by the last section.</p>
+<p><strong>Group 2:</strong></p>
+<ul>
+<li>building:levels_1</li>
+<li>landuse_1</li>
+<li>landuse_2</li>
+<li>leisure_1</li>
+<li>leisure_2</li>
+<li>natural_1</li>
+<li>natural_2</li>
+<li>sport_1</li>
+<li>sport_2</li>
+<li>sport_3</li>
+<li>surface_1</li>
+<li>water_1</li>
+</ul>
+<p>The group 2, which was called multi-tags because they were additional information to another tag with similar name, each of their values was concatenated to the main tag value and dropped before.</p>
+<p><strong>Example</strong></p>
+<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"sport"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"basketball"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"sport_1"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"volleyball"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"sport_2"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"handball"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"sport_3"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"soccer"</span>/&gt;</span>
+</code></pre>
+<p>To</p>
+<pre><code class="language-json">{"<span class="hljs-attribute">sport</span>": <span class="hljs-value"><span class="hljs-string">"basketball;volleyball;handball;soccer"</span></span>}
+</code></pre>
+<p><strong>Group 3:</strong></p>
+<ul>
+<li>2016olympicgames</li>
+<li>3dr:type</li>
+<li>IBGE:CD_ADMINIS</li>
+<li>IBGE:GEOCODIGO</li>
+<li>ISO3166-1</li>
+<li>ISO3166-1:alpha2</li>
+<li>ISO3166-1:alpha3</li>
+<li>ISO3166-1:numeric</li>
+<li>ISO3166-2</li>
+<li>capital_ISO3166-1</li>
+<li>currency:BRL</li>
+<li>currency:R$</li>
+<li>currency:USD</li>
+<li>fuel:octane_80</li>
+<li>fuel:octane_91</li>
+<li>fuel:octane_95</li>
+<li>ref:CNUC</li>
+</ul>
+<p>The group 3 was dropped.</p>
+<p>Finally, address information was shaped into a python dictionary, for a better visualization.</p>
+<p><strong>Example</strong></p>
+<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"addr:city"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"Brasília"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"addr:street"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"Avenida das Castanheiras"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">tag</span> <span class="hljs-attribute">k</span>=<span class="hljs-value">"addr:suburb"</span> <span class="hljs-attribute">v</span>=<span class="hljs-value">"Águas Claras"</span>/&gt;</span>
+</code></pre>
+<p>To</p>
+<pre><code class="language-json">{"<span class="hljs-attribute">address</span>": <span class="hljs-value">{"<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Brasília"</span></span>,
+             "<span class="hljs-attribute">street</span>": <span class="hljs-value"><span class="hljs-string">"Avenida das Castanheiras"</span></span>,
+             "<span class="hljs-attribute">suburb</span>": <span class="hljs-value"><span class="hljs-string">"Águas Claras"</span>
+            </span>}
+</span>}
+</code></pre>
+<p>After the entire cleaning process, the data was converted from xml to json and written into a file.</p>
+<p><strong>File Name :</strong> <a href="./area.json">area.json</a>.<br>
+<strong>File Size :</strong> 88,5 MB.</p>
+<hr>
+<h2>MongoDB</h2>
+<p>The data into json file was imported to MongoDB with <code>mongoimport</code> command.<br>
+There are some queries and statistics about the dataset bellow:</p>
+<p><strong>Number of Documents</strong></p>
+<pre><code>&gt; db.area.aggregate({$group:{"_id":"Documents","Total":{$sum:1}}})
+
+Output:
+{ "_id" : "Documents", "Total" : 426357 }
+</code></pre>
+<p><strong>Number of Unique Users</strong></p>
+<pre><code>&gt; db.area.aggregate({$group:{_id:"users",unique:{$addToSet:"$created.uid"}}}
+                    ,{$project:{_id:1,unique:{$size:"$unique"}}
+                   })
+
+Output:
+{ "_id" : "users", "unique" : 699 }
+</code></pre>
+<p><strong>Number of Node and Way</strong></p>
+<pre><code>&gt; db.area.aggregate({$match:{element:{$in:["node","way"]}}}
+                    ,{$group:{_id:"$element",count:{$sum:1}}
+                   })
+
+Output:
+{ "_id" : "way", "count" : 74821 }
+{ "_id" : "node", "count" : 350669 }
+</code></pre>
+<p><strong>Number of Node Types</strong></p>
+<pre><code>&gt; db.area.aggregate({$match:{"element":"node"}}
+                    ,{$group:{_id:"amenity",unique:{$addToSet:"$amenity"}}}
+                    ,{$project:{_id:"amenity",unique:{$size:"$unique"}}
+                   })
+
+Output:
+{ "_id" : "amenity", "unique" : 78 }
+</code></pre>
+<hr>
+<h2>Conclusion</h2>
+<h3>Problems found on map</h3>
+<ul>
+<li>Special chars and bad keys in tag elements.</li>
+<li>Abbreviated names.</li>
+<li>More than one tag to similar information.</li>
+</ul>
+<h3>Data Overview</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>area.osm</td>
+<td>82,1 MB</td>
+</tr>
+<tr>
+<td>area.json</td>
+<td>88,5 MB</td>
+</tr>
+<tr>
+<td>node_sample.osm</td>
+<td>35,7 KB</td>
+</tr>
+<tr>
+<td>way_sample.osm</td>
+<td>276 KB</td>
+</tr>
+<tr>
+<td>relation_sample.osm</td>
+<td>71,4 KB</td>
+</tr>
+<tr>
+<td>sample.py</td>
+<td>2,03 KB</td>
+</tr>
+<tr>
+<td>audit.py</td>
+<td>2,33 KB</td>
+</tr>
+<tr>
+<td>clean.py</td>
+<td>1,39 KB</td>
+</tr>
+<tr>
+<td>xml2json.py</td>
+<td>3,33 KB</td>
+</tr>
+</tbody>
+</table>
+<h3>Additional Ideas</h3>
+<p><strong>Last Modify</strong></p>
+<pre><code>&gt; db.area.aggregate({$group:{_id:"Last Modify","Date":{"$max":"$created.timestamp"}}})
+
+Output:
+{ "_id" : "Last Modify", "Date" : "2018-02-02 12:56:04" }
+</code></pre>
+<p><strong>Top 10 common amenity</strong></p>
+<pre><code>&gt; db.area.aggregate({$match:{amenity:{$exists:1}}},
+                    {$group:{_id:"$amenity","amount":{$sum:1}}},
+                    {$sort:{"amount":-1}}, {$limit:10})
+
+Output:
+{ "_id" : "parking", "amount" : 1436 }
+{ "_id" : "restaurant", "amount" : 775 }
+{ "_id" : "school", "amount" : 707 }
+{ "_id" : "place_of_worship", "amount" : 364 }
+{ "_id" : "fast_food", "amount" : 361 }
+{ "_id" : "fuel", "amount" : 276 }
+{ "_id" : "pharmacy", "amount" : 217 }
+{ "_id" : "bank", "amount" : 185 }
+{ "_id" : "bar", "amount" : 177 }
+{ "_id" : "police", "amount" : 162 }
+</code></pre>
+<p><strong>Top 10 sports with more places</strong></p>
+<pre><code>&gt; db.area.aggregate({$project:{sport:{$split:["$sport",";"]}}},
+                    {$unwind:"$sport"},
+                    {$group:{_id:"$sport","places":{$sum:1}}},
+                    {$sort:{"places":-1}},
+                    {$limit:10})
+
+Output:
+{ "_id" : "soccer", "places" : 207 }
+{ "_id" : "tennis", "places" : 92 }
+{ "_id" : "multi", "places" : 81 }
+{ "_id" : "basketball", "places" : 61 }
+{ "_id" : "swimming", "places" : 36 }
+{ "_id" : "fitness", "places" : 33 }
+{ "_id" : "volleyball", "places" : 22 }
+{ "_id" : "beachvolleyball", "places" : 16 }
+{ "_id" : "skateboard", "places" : 14 }
+{ "_id" : "gymnastics", "places" : 12 }
+</code></pre>
+<p><strong>Top 10 contributors</strong></p>
+<pre><code>&gt; db.area.aggregate({$group:{_id:"$created.user","contributions":{$sum:1}}},
+                   {$sort:{"contributions":-1}},
+                   {$limit:10})
+
+Output:
+{ "_id" : "erickdeoliveiraleal", "contributions" : 102796 }
+{ "_id" : "MAPconcierge", "contributions" : 37313 }
+{ "_id" : "teste18", "contributions" : 26088 }
+{ "_id" : "Linhares", "contributions" : 24433 }
+{ "_id" : "wille", "contributions" : 23867 }
+{ "_id" : "Marllon moreira", "contributions" : 18303 }
+{ "_id" : "jadson_reis", "contributions" : 13052 }
+{ "_id" : "charliekowacks", "contributions" : 11623 }
+{ "_id" : "BladeTC", "contributions" : 10060 }
+{ "_id" : "wesleygmartins", "contributions" : 9313 }
+</code></pre>
+<h3>Sugestions</h3>
+<p>Analyzing the dataset it was possible to perceive some problems, such as:<br>
+presence of special characters in keys values and words in the native language of the area (Portuguese), avoiding the standard of writing in English;<br>
+a small amount of postal code data, which would be very useful for validating and cross-checking information with other reliable and external databases, this data could greatly aid in acquiring more information to complement the map; and<br>
+a single user leads too far ahead in the number of contributions, which shows an unbalanced contribution in the area.<br>
+After listing the problems encountered, some options are suggested:<br>
+audit and clean the data from time to time;<br>
+suggest the insertion of postal code tag at the time of data registration;<br>
+encourage greater user collaboration.<br>
+However, improve the data quality frequently can be a costly process and the insertion of wrong postal codes can mess up data in a cross validation.<br>
+Care must be taken on encouraging user collaboration, some solutions can be cheated like solutions based on points and prize,
+wrong information can be purposely added or modified only to increase the user's score instead of collaborating with the map.</p>
+<hr>
+<h2>References</h2>
+<p><a href="./references.txt">references.txt</a></p>
+<ol>
+<li>https://classroom.udacity.com/me</li>
+<li>https://docs.google.com/document/d/1F0Vs14oNEs2idFJR3C_OPxwS6L0HPliOii-QpbmrMo4/pub</li>
+<li>http://jbt.github.io/markdown-editor/</li>
+<li>https://www.tutorialspoint.com/mongodb/index.htm</li>
+<li>https://docs.mongodb.com/manual/</li>
+<li>https://stackoverflow.com/</li>
+<li>https://docs.python.org/3/</li>
+<li>https://help.github.com/articles/basic-writing-and-formatting-syntax/</li>
+<li>https://github.github.com/gfm/</li>
+<li>https://wiki.openstreetmap.org/wiki/Distrito_Federal,_Brazil</li>
+<li>https://wiki.openstreetmap.org/wiki/Category:Users_in_Distrito_Federal,_Brazil</li>
+</ol>

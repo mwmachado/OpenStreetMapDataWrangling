@@ -1,0 +1,5 @@
+Area: https://www.openstreetmap.org/#map=12/-15.7501/-47.8784 (Federal District, Brazil)
+URL: https://overpass-api.de/api/map?bbox=-48.1479,-15.9003,-47.6089,-15.5996
+Motivation : Area around my hometown (Brasilia).
+File Name : area.osm.
+File Size : 82,1 MB.
